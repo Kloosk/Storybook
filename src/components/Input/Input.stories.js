@@ -7,7 +7,7 @@ export default {
     onClick: {action: 'clicked'}
 }
 
-export const Small = () => <Input variant='small'/>;
+export const Small = () => <Input variant='small' onClick={() => console.log("Input clicked",process.env.STORYBOOK_THEME)}/>;
 export const Normal = () => <Input variant='normal'/>;
 export const Big = () => <Input variant='big'/>;
 
@@ -20,6 +20,3 @@ SmallInput.args = {
 
 };
 
-
-
-Small.storyName = 'Small name';
